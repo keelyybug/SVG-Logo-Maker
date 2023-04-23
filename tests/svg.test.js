@@ -1,4 +1,4 @@
-const SVG = require('./svg');
+const SVG = require('../lib/svg');
 
    test('should throw an error if text exceeds 3 characters', () => {
     
