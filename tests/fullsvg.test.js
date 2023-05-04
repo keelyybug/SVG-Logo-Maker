@@ -8,13 +8,14 @@ describe("Circle", () => {
     it("should take three input initials and fill them with the input color, and do the same with the input shape and the input shape color", () => {
 
         const expectedSvg =
-        `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        `
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-        <circle cx="150" cy="100" r="80" fill="pink"/>
-      
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">LOL</text>
-      
-        </svg>`
+<circle cx="150" cy="100" r="80" fill= "pink"/>
+
+<text x="150" y="125" font-size="60" text-anchor="middle" fill="white">LOL</text>
+
+</svg>`
 
       const [text, textColor, shapeColor] = ["LOL", "white", "pink"];
       const circle = new Circle(shapeColor, text, textColor);
@@ -26,13 +27,13 @@ describe("Square", () => {
     it("should take three input initials and fill them with the input color, and do the same with the input shape and the input shape color", () => {
 
         const expectedSvg = `
-        <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-        <rect x="90" y="40" width="120" height="120" fill="pink"/>
-      
-        <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">LOL</text>
-      
-        </svg>`
+<rect x="90" y="40" width="120" height="120" fill="pink"/>
+
+<text x="150" y="125" font-size="60" text-anchor="middle" fill="white">LOL</text>
+
+</svg>`
 
       const [text, textColor, shapeColor] = ["LOL", "white", "pink"];
       const square = new Square(shapeColor, text, textColor);
@@ -45,13 +46,13 @@ describe("Triangle", () => {
         it("should take three input initials and fill them with the input color, and do the same with the input shape and the input shape color", () => {
 
             const expectedSvg = `
-            <svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
 
-            <polygon points="150, 18 244, 182 56, 182" fill="pink"/>
-          
-            <text x="150" y="150" font-size="60" text-anchor="middle" fill="white">LOL</text>
-          
-            </svg>`
+<polygon points="150, 18 244, 182 56, 182" fill="pink"/>
+
+<text x="150" y="150" font-size="60" text-anchor="middle" fill="white">LOL</text>
+
+</svg>`
 
           const [text, textColor, shapeColor] = ["LOL", "white", "pink"];
           const triangle = new Triangle(shapeColor, text, textColor);
